@@ -10,9 +10,6 @@ jobs:
   run-cypress-tests:
     runs-on: ubuntu-latest
 
-    container:
-      image: cypress/browsers:node-18.12.0-chrome-106  # Cypress Docker image with Chrome
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
