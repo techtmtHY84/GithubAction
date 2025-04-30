@@ -1,4 +1,4 @@
-describe('template spec', () => {
+describe('API Test', () => {
   it('should get list of posts', () => {
     cy.request('https://jsonplaceholder.typicode.com/posts').then((response) => {
       expect(response.status).to.eq(200);
